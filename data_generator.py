@@ -29,6 +29,8 @@ def generate_random_value(field_type: str) -> Any:
         first_names = ['John', 'Jane', 'Michael', 'Sarah', 'David', 'Emily', 'Robert', 'Lisa', 'James', 'Mary']
         last_names = ['Smith', 'Johnson', 'Williams', 'Brown', 'Jones', 'Garcia', 'Miller', 'Davis', 'Rodriguez', 'Martinez']
         return f"{random.choice(first_names)} {random.choice(last_names)}"
+    elif field_type == "age":
+        return random.randint(1, 90)
     else:
         return None
 
